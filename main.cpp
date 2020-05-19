@@ -2,7 +2,7 @@
 
 
 int main() {
-	int volume, ticket, atraso, scorevol;
+	int volume, ticket, atraso, scorevol, scorein, scorepay;
 	char pagamento;
 
   cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
@@ -24,7 +24,14 @@ int main() {
   else if(ticket>3000)scorevol=60;
   else scorevol=0;
   cout << "Score de volume de compras = " << scorevol << " pontos"<< endl;
-  
+  \\
+  if(atraso>1 ||volume=0)scorein=0;
+  else if(atraso==1)scorein=15;
+  else scorein=30;
+  if(pagamento=='D')scorepay=5;
+  else scorepay=10;
+  cout << "Score de inadimplencia = " << scorepay << " pontos"<< endl;
+  cout << "Score de forma de pagamento = " << scorepay << " pontos"<< endl;
   
 
 
