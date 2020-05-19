@@ -2,7 +2,7 @@
 
 
 int main() {
-	int volume, ticket, atraso, scorevol, scorein, scorepay;
+	int volume, ticket, atraso, scorevol, scorein, scorepay, classificacao;
 	char pagamento;
 
   cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
