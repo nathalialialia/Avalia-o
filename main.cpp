@@ -2,7 +2,7 @@
 
 
 int main() {
-	int volume, ticket, atraso;
+	int volume, ticket, atraso, scorevol;
 	char pagamento;
 
   cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
@@ -18,7 +18,14 @@ int main() {
   cin >> atraso;
   cout << "A maioria das compras foi em dinheiro, cartao, ou boleto?" << endl;
   cin >> pagamento;
-
+  \\
+  if(v<=2 && ticket<=3000)scorevol=20;
+  else if(v>2 && ticket<=3000)scorevol=40;
+  else if(ticket>3000)scorevol=60;
+  else scorevol=0;
+  cout << "Score de volume de compras = " << scorevol << " pontos"<< endl;
+  
+  
 
 
 
