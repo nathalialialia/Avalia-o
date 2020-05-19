@@ -32,7 +32,14 @@ int main() {
   else scorepay=10;
   cout << "Score de inadimplencia = " << scorepay << " pontos"<< endl;
   cout << "Score de forma de pagamento = " << scorepay << " pontos"<< endl;
-  
+  \\
+  classificacao = scorevol+ scorein + scorepay;
+  if(classificacao<=25){
+  cout << "Classificacao final = CLIENTE BRONZE" << endl;
+  }
+  else if(classificacao>25 && classificacao<=75){cout << "Classificacao final = CLIENTE PRATA" << endl;
+  }
+  else cout << "Classificacao final = CLIENTE OURO" << endl;
 
 
 
